@@ -11,8 +11,7 @@ body {
 /* Navbar Custom Styles */
 .navbar-custom {
   background-color: rgba(255, 255, 255, 0.5);
-  max-width: 1200px;
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
   border-radius: 40px;
   position: fixed;
@@ -37,9 +36,11 @@ body {
 }
 
 .navbar-nav {
-  flex-direction: row;
-  align-items: center;
-  margin-left: auto;
+  flex-direction: column; /* Mengatur item navbar dalam kolom */
+}
+
+.navbar-nav .nav-item {
+  text-align: center; /* Memastikan teks di dalam item navbar berada di tengah */
 }
 
 .nav-item {
@@ -102,19 +103,19 @@ body {
   transition: transform 0.2s ease;
 }
 
-.custom-toggler .navbar-toggler-icon::before {
+.custom-toggler.collapsed .navbar-toggler-icon::before {
   transform: translate(-50%, -6px) rotate(0deg);
 }
 
-.custom-toggler .navbar-toggler-icon::after {
+.custom-toggler.collapsed .navbar-toggler-icon::after {
   transform: translate(-50%, 6px) rotate(0deg);
 }
 
-.custom-toggler.collapsed .navbar-toggler-icon::before {
+.custom-toggler .navbar-toggler-icon::before {
   transform: translate(-50%, 0) rotate(45deg);
 }
 
-.custom-toggler.collapsed .navbar-toggler-icon::after {
+.custom-toggler .navbar-toggler-icon::after {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
@@ -128,6 +129,7 @@ body {
   transition: background-color 0.3s ease-in-out;
   width: 100%;
   margin: 0;
+  font-weight: bold; /* Menambahkan font-weight bold */
 }
 
 .btn-custom:hover {
@@ -149,10 +151,11 @@ body {
 
 .main-content .btn-explore {
   background-color: #ffc73c;
+  font-weight: 600; /* Menambahkan font-weight bold */
   color: white;
   border-radius: 50px;
-  padding: 15px;
-  font-size: 1.2rem;
+  padding: 10px;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
@@ -424,6 +427,17 @@ body {
     height: auto;
     border-radius: 20px;
   }
+
+  .nav-link:hover,
+  .nav-item-menu:hover {
+    background-color: transparent !important; /* Hilangkan perubahan latar belakang pada hover */
+    color: inherit !important; /* Hilangkan perubahan warna teks pada hover */
+    box-shadow: none !important; /* Hilangkan efek bayangan pada hover */
+  }
+
+  .btn-custom:hover {
+    background-color: #ffc734 !important; /* Pastikan tombol tetap pada warna default */
+  }
 }
 
 @media (max-width: 576px) {
@@ -460,5 +474,16 @@ body {
   .img-fluid {
     max-width: 80%;
     margin: 0;
+  }
+
+  .nav-link:hover,
+  .nav-item-menu:hover {
+    background-color: transparent !important; /* Hilangkan perubahan latar belakang pada hover */
+    color: inherit !important; /* Hilangkan perubahan warna teks pada hover */
+    box-shadow: none !important; /* Hilangkan efek bayangan pada hover */
+  }
+
+  .btn-custom:hover {
+    background-color: #ffc734 !important; /* Pastikan tombol tetap pada warna default */
   }
 }
