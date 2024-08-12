@@ -13,6 +13,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   width: 80%;
   margin: 20px auto;
+  padding: 10px 0;
   border-radius: 40px;
   position: fixed;
   top: 20px;
@@ -203,12 +204,12 @@ body {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* About Section Styles */
 .about-section {
-  padding: 60px 0;
+  padding: 40px 0;
   background-image: url("../assets/gambar/about.png");
   background-size: cover;
   color: white;
@@ -217,21 +218,21 @@ body {
 .about-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about-description {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.mekanisme {
-  margin-top: 40px;
-}
+/* .mekanisme {
+  margin-top: 0px;
+} */
 
 .mekanisme h3 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Timeline Styles */
@@ -296,82 +297,10 @@ body {
   margin-bottom: 5px;
 }
 
-/* Blogs Section Styles */
-.blogs-section {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
-
-.featured-article {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.featured-article img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-.featured-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.featured-text h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.featured-text p {
-  margin: 5px 0 0 0;
-  font-size: 14px;
-  color: #ffc73c;
-}
-
-.blogs-list {
-  padding-left: 20px;
-}
-
-.blog-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.blog-item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-.blog-text h4 {
-  font-size: 18px;
-  margin: 0;
-  color: #333;
-}
-
-.blog-text p {
-  font-size: 14px;
-  color: #888;
-  margin: 5px 0 0 0;
-}
-
 /* Custom Button Styles */
 .btn-custom3 {
   background-color: #ffc73c !important;
+  font-weight: 600;
   color: white !important;
   border-radius: 40px;
   padding: 10px 30px;
@@ -383,6 +312,146 @@ body {
 
 .btn-custom3:hover {
   background-color: #ffb300 !important;
+}
+
+// sections css blogs
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.blog-time {
+  font-size: 0.875rem;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.blog-time-card {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+/* Main Blog Styles */
+.main-blog {
+  background-color: #f8f9fa;
+  padding: 0;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.main-blog:hover img {
+  transform: scale(1.05);
+}
+
+.main-blog .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, #00d1ff, #00d1ff, #ffffff00);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+.main-blog .overlay h4 {
+  font-size: 18px;
+}
+
+.main-blog:hover .overlay h4 {
+  color: #ffc73c;
+}
+
+/* Side Blogs Styles */
+.side-blogs .card {
+  border: none;
+  background-color: transparent;
+}
+
+.side-blogs .card img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.side-blogs .card:hover img {
+  transform: scale(1.05);
+}
+
+.side-blogs .card-body {
+  padding-left: 10px;
+}
+
+.side-blogs .card:hover .card-title {
+  color: #00d1ff;
+}
+
+/* Header Section Styles */
+
+.header-section-bg {
+  background-image: url("/assets/gambar/Aggregator.png"); /* Replace with your background image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center; /* Center the background image */
+  padding: 30px 0; /* Adjust padding as needed */
+}
+
+.header-section {
+  margin-bottom: 20px;
+}
+
+.header-section img {
+  width: 300px;
+  height: auto;
+}
+
+/* Button Styles */
+.btn-custom-blog {
+  background-color: #00d1ff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn-custom-blog:hover {
+  background-color: #ffc73c;
+  color: #fff;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.btn-custom-blog::after {
+  content: "→";
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  margin-left: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease;
 }
 
 /* Responsive Adjustments */
@@ -414,12 +483,17 @@ body {
   }
 
   .main-content {
-    padding-top: 120px;
+    padding-top: 360px;
   }
 
   .box-slider {
     width: 100%;
     margin-top: 20px;
+  }
+
+  .img-fluid-hero {
+    max-width: 80%;
+    margin: 0;
   }
 
   .swiper-slide img {
@@ -438,6 +512,64 @@ body {
   .btn-custom:hover {
     background-color: #ffc734 !important; /* Pastikan tombol tetap pada warna default */
   }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .mekanisme h3 {
+    font-size: 24px;
+  }
+
+  .timeline::before {
+    left: 0px; /* Adjust the position of the timeline line */
+  }
+
+  .timeline-item {
+    margin-bottom: 30px; /* Reduce space between items */
+  }
+
+  .timeline-item h4 {
+    font-size: 18px;
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .header-section img {
+    width: 200px; /* Smaller width for header logo on medium screens */
+  }
+
+  .main-blog img {
+    height: auto; /* Allow the image to maintain aspect ratio on smaller screens */
+  }
+
+  .side-blogs .card img {
+    height: 80px; /* Adjust side blog image height for medium screens */
+  }
+
+  .btn-custom-blog {
+    font-size: 0.875rem; /* Adjust button font size for medium screens */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+  }
+  .blog-title {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .btn-custom-blog {
+    width: auto; /* Set width to auto to avoid full width */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* Center the button horizontally */
+  }
 }
 
 @media (max-width: 576px) {
@@ -451,11 +583,10 @@ body {
 
   .main-content {
     padding-top: 160px;
-    text-align: center;
   }
 
   .main-content .btn-explore {
-    width: 40%;
+    width: 45%;
     font-size: 10px;
   }
 
@@ -471,7 +602,7 @@ body {
     border-radius: 20px;
   }
 
-  .img-fluid {
+  .img-fluid-hero {
     max-width: 80%;
     margin: 0;
   }
@@ -485,5 +616,70 @@ body {
 
   .btn-custom:hover {
     background-color: #ffc734 !important; /* Pastikan tombol tetap pada warna default */
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .mekanisme h3 {
+    font-size: 20px;
+  }
+
+  .timeline::before {
+    left: 0px; /* Further adjust the position of the timeline line */
+  }
+
+  .timeline-item {
+    margin-bottom: 20px; /* Further reduce space between items */
+  }
+
+  .timeline-item h4 {
+    font-size: 16px;
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .timeline-item p {
+    font-size: 12px;
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .header-section img {
+    width: 150px; /* Smaller width for header logo on small screens */
+  }
+
+  .main-blog img {
+    height: auto; /* Ensure image maintains aspect ratio */
+  }
+
+  .side-blogs .card img {
+    height: 60px; /* Adjust side blog image height for small screens */
+  }
+
+  .btn-custom-blog {
+    font-size: 0.75rem; /* Adjust button font size for small screens */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+  .blog-title {
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .btn-custom-blog {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 40px; /* Center the button horizontally */
+  }
+
+  .btn-custom-blog::after {
+    right: 35px;
+    font-size: 1rem;
+    margin-left: 5px; /* Adjust spacing on mobile */
   }
 }

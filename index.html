@@ -17,7 +17,7 @@
 
 <body>
     <!-- Hero content-->
-    <div class="main-content">
+    <section class="main-content">
         <div class="container">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -50,7 +50,7 @@
             <div class="row align-items-center">
                 <!-- Left Content: Image and Button -->
                 <div class="col-md-6 d-flex flex-column align-items-start">
-                    <img src="assets/gambar/logo-banner.png" alt="Explore Thailand" class="img-fluid =">
+                    <img src="assets/gambar/logo-banner.png" alt="Explore Thailand" class="img-fluid">
                     <a class="btn btn-explore" href="#">TENTANG PROGRAM</a>
                 </div>
 
@@ -80,14 +80,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- About Content -->
-    <section class="about-section">
+    <section class="about-section bg-cover text-white">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <!-- Left: Circular Image -->
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center ">
                     <div class="circle-image">
                         <img src="assets/gambar/about-image 1.png" alt="Explore Thailand" class="img-fluid">
                     </div>
@@ -97,13 +97,15 @@
                     <h2 class="about-title">Tentang Program</h2>
                     <p class="about-description">
                         Bergabunglah dalam "Explore Thailand bersama Detiktravel"! Kompetisi ini terbuka bagi pembaca
-                        Detiktravel yang ingin menikmati perjalanan ke Thailand. Kunjungi destinasi menakjubkan seperti
-                        pantai Pak Bia Island dan destinasi lain di Phuket, Thailand. Jadi bagian dari perjalanan kami
-                        dan menangkan hadiah jalan-jalan yang tak terlupakan!
+                        Detiktravel yang ingin
+                        menikmati perjalanan ke Thailand. Kunjungi destinasi menakjubkan seperti pantai Pak Bia Island
+                        dan destinasi lain di
+                        Phuket, Thailand. Jadi bagian dari perjalanan kami dan menangkan hadiah jalan-jalan yang tak
+                        terlupakan!
                     </p>
                     <a href="#" class="btn btn-custom3">DAFTAR SEKARANG</a>
 
-                    <div class="mekanisme">
+                    <div class="mekanisme my-4">
                         <h3>Mekanisme</h3>
                         <div class="timeline">
                             <div class="timeline-item">
@@ -131,55 +133,75 @@
         </div>
     </section>
 
+
     <!-- Blogs Section -->
-    <section class="blogs-section">
-        <div class="container">
-            <div class="row">
-                <!-- Left Content: Featured Article -->
-                <div class="col-md-6">
-                    <div class="featured-article">
-                        <img src="assets/gambar/thumbnail-artikel-1.png" alt="Warga Thailand Pakai Boneka Doraemon"
-                            class="img-fluid">
-                        <div class="featured-text">
-                            <h3>Warga Thailand Pakai Boneka Doraemon untuk Ritual Penanggil Hujan</h3>
-                            <p>3 jam yang lalu</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Content: List of Articles -->
-                <div class="col-md-6">
-                    <div class="blogs-list">
-                        <div class="blog-item">
-                            <img src="assets/gambar/artikel-1 2.png"
-                                alt="Thailand Ngarep Cuan Banyak dari Turis China dan Jepang" class="img-fluid">
-                            <div class="blog-text">
-                                <h4>Thailand Ngarep Cuan Banyak dari Turis China dan Jepang</h4>
-                                <p>1 jam yang lalu</p>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <img src="assets/gambar/artikel-1 2.png"
-                                alt="Cahaya Lampion Hiasi Wat Phra Singh, Uniknya Thailand Saat Waisak"
-                                class="img-fluid">
-                            <div class="blog-text">
-                                <h4>Cahaya Lampion Hiasi Wat Phra Singh, Uniknya Thailand Saat Waisak</h4>
-                                <p>1 jam yang lalu</p>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <img src="assets/gambar/artikel-1 2.png"
-                                alt="Cantiknya Lisa BLACKPINK Bersolek ala Gadis Thailand" class="img-fluid">
-                            <div class="blog-text">
-                                <h4>Cantiknya Lisa BLACKPINK Bersolek ala Gadis Thailand</h4>
-                                <p>1 jam yang lalu</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="header-section-bg">
+        <div class="container my-4">
+            <!-- Header Section with Logo -->
+            <div class="header-section">
+                <img src="/assets/gambar/detik-update.png" alt="Logo">
             </div>
             <div class="row">
-                <div class="col text-center">
-                    <a href="#" class="btn btn-custom3">Lihat Berita Lainnya →</a>
+                <!-- Main Blog -->
+                <div class="col-md-6 my-4">
+                    <div class="main-blog">
+                        <img src="/assets/gambar/thumbnail-artikel-1.png" alt="Main Blog Image">
+                        <div class="overlay">
+                            <h4>Warga Thailand Pakai Boneka Doraemon untuk Ritual Pemanggil Hujan</h4>
+                            <p class="blog-time-card">3 jam yang lalu</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side Blogs -->
+                <div class="col-md-6 my-4">
+                    <div class="side-blogs">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4 mb-3">
+                                    <img src="/assets/gambar/artikel-1 2.png" class="img-fluid" alt="Thumbnail 1">
+                                </div>
+                                <div class="col-8">
+                                    <div>
+                                        <h5 class="card-title blog-title">Thailand Ngarep Cuan Banyak dari Turis China
+                                            dan
+                                            Jepang</h5>
+                                        <p class="blog-time">1 jam yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="/assets/gambar/thumbnail-artikel-2.png" class="img-fluid"
+                                        alt="Thumbnail 2">
+                                </div>
+                                <div class="col-8">
+                                    <div>
+                                        <h5 class="card-title blog-title">Cahaya Lampu Hiasi Kuil Wat Phra Dhammakaya
+                                            Thailand Saat Waisak</h5>
+                                        <p class="blog-time">1 jam yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="/assets/gambar/thumbnail-artikel-3.png" class="img-fluid"
+                                        alt="Thumbnail 3">
+                                </div>
+                                <div class="col-8">
+                                    <div>
+                                        <h5 class="card-title blog-title">Cantiknya Lisa BLACKPINK Berwisata Sejarah di
+                                            Thailand</h5>
+                                        <p class="blog-time">1 jam yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-custom-blog">Lihat Berita Lainnya</a>
                 </div>
             </div>
         </div>
