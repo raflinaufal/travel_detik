@@ -66,6 +66,15 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar Collapse */
+.navbar-collapse {
+  display: none; /* Navbar tersembunyi pada tampilan mobile */
+}
+
+.navbar-toggler.collapsed + .navbar-collapse {
+  display: block; /* Navbar tampil saat tombol toggle diklik */
+}
+
 /* Custom Toggler for Mobile */
 .custom-toggler {
   background-color: #ffc73c;
@@ -104,19 +113,19 @@ body {
   transition: transform 0.2s ease;
 }
 
-.custom-toggler.collapsed .navbar-toggler-icon::before {
+.custom-toggler .navbar-toggler-icon::before {
   transform: translate(-50%, -6px) rotate(0deg);
 }
 
-.custom-toggler.collapsed .navbar-toggler-icon::after {
+.custom-toggler .navbar-toggler-icon::after {
   transform: translate(-50%, 6px) rotate(0deg);
 }
 
-.custom-toggler .navbar-toggler-icon::before {
+.custom-toggler.collapsed .navbar-toggler-icon::before {
   transform: translate(-50%, 0) rotate(45deg);
 }
 
-.custom-toggler .navbar-toggler-icon::after {
+.custom-toggler.collapsed .navbar-toggler-icon::after {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
@@ -542,6 +551,10 @@ body {
 .footer .copyright {
   font-size: 14px;
   margin-top: 10px;
+}
+
+.row-custom {
+  padding-top: 100px;
 }
 
 /* Responsive Adjustments */
